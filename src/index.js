@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import GrudgeProvider from './GrudgeProvider';
 
 import Application from './Application';
 
@@ -7,4 +8,9 @@ import './styles.css';
 
 const rootElement = document.getElementById('root');
 
-ReactDOM.render(<Application />, rootElement);
+ReactDOM.render(
+  <GrudgeProvider>
+    <Application />
+  </GrudgeProvider>,
+  rootElement
+);
