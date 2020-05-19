@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { GrudgeContext } from './GrudgeProvider';
 
-const NewGrudge = React.memo(() => {
+const NewGrudge = () => {
   const [person, setPerson] = useState('');
   const [reason, setReason] = useState('');
   const { addGrudge } = useContext(GrudgeContext);
@@ -30,6 +30,6 @@ const NewGrudge = React.memo(() => {
       <input className="NewGrudge-submit button" type="submit" />
     </form>
   );
-});
+};
 
 export default NewGrudge;
