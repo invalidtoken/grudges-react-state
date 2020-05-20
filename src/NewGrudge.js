@@ -8,6 +8,8 @@ const NewGrudge = () => {
 
   const handleChange = (event) => {
     event.preventDefault();
+    setPerson('');
+    setReason('');
     addGrudge({ person, reason });
   };
 

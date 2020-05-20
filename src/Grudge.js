@@ -4,8 +4,6 @@ import { GrudgeContext } from './GrudgeProvider';
 const Grudge = ({ grudge }) => {
   const { toggleForgiveness } = useContext(GrudgeContext);
   const forgive = () => toggleForgiveness(grudge.id);
-  console.log('Grudge - ', grudge);
-
   return (
     <article className="Grudge">
       <h3>{grudge.person}</h3>
